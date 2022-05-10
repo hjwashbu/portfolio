@@ -1,0 +1,31 @@
+body{
+    background-color: #fff;
+}
+.body-text{
+    margin: 10%;
+}
+h1{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -350px;
+    margin-bottom: 325px;
+}
+h2{
+    color: rgb(9,109,121,1);
+}
+.s2, .p2{
+    text-align: right;
+}
+p{
+    font-weight: 700;
+}
+footer{
+    height: 150px;
+    background-color: rgba(0, 29, 36, 1);
+    color: #fff;
+    text-align: center;
+    padding-top: 73px;
+}

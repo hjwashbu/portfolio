@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: 5px grey solid;
+    box-sizing: border-box;
+}
+header{
+    background-color: blanchedalmond;
+    color:cornflowerblue;
+    border: 5px grey solid;
+    text-shadow: 2px 2px lightgrey;
+}
+nav{
+    background-color: cornflowerblue;
+    color:lightcoral;
+    border: 5px grey solid;
+}
+.shadow{
+    background-color: lemonchiffon;
+    width: 35%;
+    box-shadow: 5px 5px lawngreen;
+}
+aside{
+    background-color: cornflowerblue;
+    color: #FFF;
+    border: 5px grey solid;
+    float: right;
+    width: 35%;
+    height: 210px;
+    background-image: url("../img/DoritoEdit.jpg");
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    
+}
+section, article{
+    background-color: indianred;
+    color: lavender;
+    border: 5px grey solid;
+    height: 100px;
+    width: 65%;
+}
+footer{
+    background-color: blanchedalmond;
+    color:cornflowerblue;
+    border: 5px grey solid;
+}

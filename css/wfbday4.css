@@ -1,0 +1,63 @@
+body{
+    background-color: #000;
+    margin: 0;
+}
+nav{
+    background-color:lightskyblue;
+    border-bottom: 5px solid lightsalmon;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 15px;
+}
+nav ul{
+    /* takes away the bullet points of the ul */
+    list-style-type: none;
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin: 15px;
+}
+nav a{
+    color:darkblue;
+    font-size: 20px;
+    /* takes away the underline on the links */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav li a:hover{
+    background-color:lightgray;
+    color:royalblue
+}
+.hero img{
+    height: auto;
+    width: 100%;
+}
+/* .hero{
+    background-image: url("/img/sergey-pesterev-JV78PVf3gGI-unsplash.jpg");
+} */
+.hero-copy{
+    color: #FFF;
+    text-align: center;
+    /* absolute allows it to be moved independently */
+    /* position: absolute;
+    top: 25%;
+    left: 20%;
+} */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-copy h1{
+    font-size: 50px;
+}
+.hero-copy p{
+    font-size: 20px;
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5ba1bbc2e2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS: end -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom CSS: end -->
+    <title>MFW Final Project</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-dark navbar-expand-xl fixed-top" style="background-color: #647c90;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="hjai logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" style="background-color: #647c90;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel" style="color: #fff;">
+                Welcome! Take a look around.
+              </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                    <!-- links W4B-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Websites for Beginners
+                      </a>
+                      <!-- w4b drop downs -->
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="https://hjwashbu.github.io/final-w4b/" target="_blank">
+                            Final Project
+                          </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="wfbday4.html" target="_blank">
+                            Day 4 - NavBar and Hero
+                          </a>
+                        </li>                      
+                        <li>
+                          <a class="dropdown-item" href="wfbday5.html" target="_blank">
+                            Day 5 - Responsive Sections Using HTML
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- links MFW -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mobile Friendly Websites
+                        </a>
+                        <!-- mfw drop downs -->
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li>
+                            <a class="dropdown-item" href="https://hjwashbu.github.io/final-mfw/" target="_blank">
+                              Final Project
+                            </a>
+                          </li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday1.html" target="_blank">
+                              Day 1 - Daily Challenge
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday3.html" target="_blank">
+                              Day 3 - Columns Using Bootstrap
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday5.html" target="_blank">
+                              Day 5 - Fun with Bootstrap
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday7.html" target="_blank">
+                              Day 7 - Parallax Scrolling
+                            </a>
+                          </li>
+                        </ul>
+                    </li>
+
+                  </ul>
+
+                  <!-- search function -->
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                  </form>
+
+                </div>
+              </div>
+        </div>
+    </nav>
+
+
+    <!-- Jumbotron -->
+    <div class="mb-5">
+      <div class=" jumbo container p-5">
+        <h1 class="portfolio display-4 fw-bold">
+          HalesJai Portfolio
+        </h1>
+        <p class="col-9 fs-4">
+          A collection of works developed over the course of two Bitwise classes.
+        </p>
+        <a href="index.html#accordion">  
+          <button class="btn btn-md portfolio" style="background-color: #914955; color: #fff;">
+            Learn More
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Carousel -->
+    <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+       <h1 class="container past display-6 fw-bold">
+         Past Projects
+       </h1> 
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="7000">
+            <a href="https://hjwashbu.github.io/final-w4b/" target="_blank">
+            <img src="img/w4bfp.png" class="d-block mh-100 " alt="Screenshot of website hero image" title="W4B Final Project">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <a href="wfbday4.html" target="_blank">
+            <img src="img/w4b4.png" class="d-block mh-100" alt="Screenshot of website hero image" title="W4B Daily Challenge">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <a href="mfwday1.html" target="_blank">
+            <img src="img/mfw1.png" class="d-block mh-100" alt="Screenshot of practice site" title="MFW Daily Challenge">
+            </a>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <a href="mfwday7.html" target="_blank">
+            <img src="img/mfw7.png" class="d-block mh-100" alt="Screenshot of parallax scroll example" title="MFW Parallax Scroll">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div> 
+
+    <hr>
+
+    <!-- Accordion -->
+    <div class="container" id="accordion">
+      <h1 class="container history display-6 fw-bold">
+        History of HalesJai
+      </h1> 
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Then...
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <em class="date fs-5">
+                November 2021
+              </em>
+              <br>
+              <p>
+                <span class="lead diplay-4">T</span>he California Department of Industrial Relations Division of Apprenticeship Standards hosts a virtual conference – Inclusive 21st Century Apprenticeships. Irma Olguin Jr., Bitwise co-founder and CEO, presented from Washington DC as Bitwise Industries had just been formally recognized as a US Department of Labor registered apprenticeship program.
+              </p>
+              <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>
+                    No one belongs here more than you.
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Irma Olguin, Jr. <cite title="Source Title">Inclusive 21st Century Apprenticeships</cite>
+                </figcaption>
+              </figure>
+              Hales takes Irma’s words to heart, and begins looking into the company and the classes they offer.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Now...
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <em class="date fs-5">
+                March 2022
+              </em>
+              <br>
+              <p>
+                <span class="lead diplay-4">F</span>rom Websites for Beginners to Mobile Friendly Websites, Hales has found something that challenges, inspires, and motivates her. This site serves as a portfolio of the work to date of HalesJai as a Bitwise student. She is proud of the work that she has done, and has chosen to highlight select pieces via the links above.
+              </p>
+              <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>
+                    No Zero Days.
+                  </p>
+                </blockquote>
+              </figure>
+              Hales chooses to live her life by the above mantra. <strong><em> No Zero Days</em></strong> means that every day she makes an effort and takes a step in the right direction – even if it’s just brushing her teeth in the morning! By taking these Bitwise classes, Hales has made sure every day of the past 12 weeks has been a non-zero day. Thank you, Bitwise!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What's to Come...
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <em class="date fs-5">
+                Future
+              </em>
+              <br>
+              <p>
+                <span class="lead diplay-4">H</span>ales plans to continue her Bitwise journey later in 2022 with the Javascript for Beginners and React classes. In the meantime, she will be working to continue practicing and expanding her portfolio. Hales has recently committed to her first development project outside of Bitwise – creating an online storefront for Timmy B’s Sweets and Heats! She wants to continue her development journey and hopes that she can find a future pursuing her passion – whether by freelancing or joining the Bitwise Apprenticeship Program.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- parallax (from Jumbo)-->
+    <div class="mb-5">
+      <div class="jumbo container p-5">
+        <h1 class="portfolio display-4 fw-bold">
+          Curious?
+        </h1>
+        <p class="col-9 fs-4">
+          Reach out to HalesJai to learn more.
+        </p>
+        <a href="contact.html">  
+          <button class="btn btn-md portfolio" style="background-color: #914955; color: #fff;">
+            Contact HalesJai
+          </button>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #444444;"> 
+      <div class="fc">
+        <img src="img/logo.png" alt="hjai logo" class="flogo logo">
+        <h3 class="copyhw fs-6">
+          &copy; HalesJai 2022
+        </h3>
+      </div>
+      <i class="fa-solid fa-hippo fa-xl"></i>
+      <div class="fc">
+        <h4 class="find fs-6">
+          Find HalesJai
+        </h4>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/hjwashbu" target="_blank" class="soc">
+            <i class="fa-brands fa-linkedin fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/hales_jai/?hl=en" target="_blank" class="soc">
+            <i class="fa-brands fa-instagram fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/haleigh.washburn" target="_blank" class="soc">
+            <i class="fa-brands fa-facebook-square fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="facebook"></i>
+          </a>
+          <a href="https://github.com/hjwashbu" target="_blank" class="soc">
+            <i class="fa-brands fa-github-square fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="github"></i>
+          </a>
+        </div>      
+      </div>
+      
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS: end -->
+</body>
+</html>

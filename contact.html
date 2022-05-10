@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5ba1bbc2e2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS: end -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Custom CSS: end -->
+    <title>MFW Final Project</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-dark navbar-expand-xl fixed-top" style="background-color: #647c90;">
+        <div class="container-fluid">
+              <!-- Top Left Link/Title -->
+                <a class="navbar-brand" href="index.html">
+                  <img src="img/logo.png" alt="hjai logo" class="logo">
+                </a>
+
+              <!-- Hamburger Menu - when small screen -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" style="background-color: #647c90;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title fs-1" id="offcanvasNavbarLabel" style="color: #fff;">
+                    Welcome! Take a look around.
+                  </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                    <!-- links W4B-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Websites for Beginners
+                      </a>
+                      <!-- w4b drop downs -->
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li>
+                          <a class="dropdown-item" href="https://hjwashbu.github.io/final-w4b/" target="_blank">
+                            Final Project
+                          </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="wfbday4.html" target="_blank">
+                            Day 4 - NavBar and Hero
+                          </a>
+                        </li>                      
+                        <li>
+                          <a class="dropdown-item" href="wfbday5.html" target="_blank">
+                            Day 5 - Responsive Sections Using HTML
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- links MFW -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mobile Friendly Websites
+                        </a>
+                        <!-- mfw drop downs -->
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li>
+                            <a class="dropdown-item" href="https://hjwashbu.github.io/final-mfw/" target="_blank">
+                              Final Project
+                            </a>
+                          </li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday1.html" target="_blank">
+                              Day 1 - Daily Challenge
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday3.html" target="_blank">
+                              Day 3 - Columns Using Bootstrap
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday5.html" target="_blank">
+                              Day 5 - Fun with Bootstrap
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="mfwday7.html" target="_blank">
+                              Day 7 - Parallax Scrolling
+                            </a>
+                          </li>
+                        </ul>
+                    </li>
+
+                  </ul>
+
+                  <!-- search function -->
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  </form>
+
+                </div>
+              </div>
+        </div>
+    </nav>
+
+
+    <!-- Jumbotron -->
+    <div class="mb-5">
+      <div class=" jumbo container p-5">
+        <h1 class="portfolio display-4 fw-bold">
+          Contact HalesJai
+        </h1>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Contact Form -->
+    <div class="container" style="font-family: 'Amatic SC', cursive; color: #914955;">
+        <h1>
+            Please use the form below to provide feedback, ask questions, or inquire about our services.
+        </h1>
+    </div>
+    <br>
+    <form class="container" id="contact-form" method="post" action="contact.php" role="form">
+ 
+        <div class="messages"></div>
+    
+        <div class="controls">
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">First Name *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name" required="required" data-error="First name is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Last Name *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Last name is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_need">Subject (Drop Down)*</label>
+                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                            <option value=""></option>
+                            <option value="Praise">Praise! (Preferred - tell me you love me)</option>
+                            <option value="Question">Question (I'll do my best to answer!)</option>
+                            <option value="HireMe">Website Development Request (Please hire me. I'm desperate)</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <br>
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <p class="text-muted text-end">
+                        <strong>*</strong> These fields are required. Contact form template by
+                        <a href="https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form" target="_blank">Bootstrapious</a>.</p>
+                </div>
+            </div>
+        </div>
+    
+    </form>
+    <br>
+    <div class="container">
+        <h2 class="text-center" style="font-family: 'Roboto', sans-serif; font-weight: 700; color: #914955;">
+            Experiencing difficulties accessing the form? 
+            <a href="contact2.html">
+            Click here.</a>
+        </h2>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #444444;"> 
+      <div class="fc">
+        <img src="img/logo.png" alt="hjai logo" class="flogo logo">
+        <h3 class="copyhw fs-6">
+          &copy; HalesJai 2022
+        </h3>
+      </div>
+      <i class="fa-solid fa-hippo fa-xl"></i>
+      <div class="fc">
+        <h4 class="find fs-6">
+          Find HalesJai
+        </h4>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/hjwashbu" target="_blank" class="soc">
+            <i class="fa-brands fa-linkedin fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/hales_jai/?hl=en" target="_blank" class="soc">
+            <i class="fa-brands fa-instagram fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/haleigh.washburn" target="_blank" class="soc">
+            <i class="fa-brands fa-facebook-square fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="facebook"></i>
+          </a>
+          <a href="https://github.com/hjwashbu" target="_blank" class="soc">
+            <i class="fa-brands fa-github-square fa-lg fa-spin" style="--fa-animation-duration: 15s;" title="github"></i>
+          </a>
+        </div>      
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS: end -->
+</body>
+</html>
